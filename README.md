@@ -11,10 +11,10 @@ This project automates testing of UI application formy_app(https://formy-project
     
 **Technologies used for automation framework are:**
 
-Python : Programming language
-Selenium Webdriver : Automation framework for web-applications
-pytest :  Python testing framework
-pytest-html: plugin for pytest that generates a HTML report for test results
+    Python : Programming language
+    Selenium Webdriver : Automation framework for web-applications
+    pytest :  Python testing framework
+    pytest-html: plugin for pytest that generates a HTML report for test results
 
 **Packages and its dependencies can be installed by running:**  
 
