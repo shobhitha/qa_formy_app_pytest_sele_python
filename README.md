@@ -28,6 +28,11 @@ pytest -v -s  --html=Reports/reports.html Tests/test_*
 
 pytest -v -s  --html=Reports/buttons_reports.html Tests/test_buttons.py
 
+To run a test method from a test class:
+
+pytest -v -s  --html=Reports/reports.html Tests/test_buttons.py::Test_ButtonPage::test_first_row_buttons
+
+
 **To run individual test from a test class:**
 
 pytest -v -s  --html=Reports/buttons_reports.html Tests/test_buttons.py::Test_ButtonPage::test_first_row_buttons
