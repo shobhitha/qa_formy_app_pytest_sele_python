@@ -22,7 +22,7 @@ pipenv install  or pipenv install --dev ( for development environment)
 
 **To run all tests at once, goto Tests directory and run:**
 
-pytest -v -s  --html=Reports/checkbox_reports.html Tests/test_*
+pytest -v -s  --html=Reports/reports.html Tests/test_*
 
 **To run a particular test:**
 
