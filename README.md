@@ -1,7 +1,7 @@
 This project automates testing of UI application formy_app(https://formy-project.herokuapp.com/). The entire framework is based on Page Object Model (POM) which reduces code duplication and increases the ease of test framework maintenance.
 
-**Page Object Model(POM) structure for this projects is as follows:
-**
+**Page Object Model(POM) structure for this projects is as follows:**
+
     Locators - locators directory
     Pages - project pages directory
     Tests - project tests directory
