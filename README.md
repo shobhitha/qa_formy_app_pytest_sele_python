@@ -26,5 +26,10 @@ pytest -v -s  --html=Reports/reports.html Tests/test_*
 
 **To run a particular test:**
 
-pytest -v -s  --html=Reports/checkbox_reports.html Tests/test_checkboxes.py
+pytest -v -s  --html=Reports/buttons_reports.html Tests/test_buttons.py
+
+**To run individual test from a test class:**
+
+pytest -v -s  --html=Reports/buttons_reports.html Tests/test_buttons.py::Test_ButtonPage::test_first_row_buttons
+
 
