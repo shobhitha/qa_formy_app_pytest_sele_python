@@ -8,6 +8,7 @@ This project automates testing of UI application formy_app(https://formy-project
     Reports - HTML reports directory
     Utilities - Getting configurations directory
     Configurations - Variables configurations directory
+    conftest.py - pytest fixtures for etup and teardown
     
 **Technologies used for automation framework are:**
 
