@@ -1,10 +1,12 @@
 import pytest
 from Pages.buttonsPage import ButtonsPage
 from Utilities.readProperties import ReadConfig
-@pytest.mark.usefixtures("setup")
+import time
+#autouse=True fixtures are run before each test_* method runs automatically. test_* doesn't have to request for fixtures explicitly
+#@pytest.mark.usefixtures("setup") -> setup is made autouse=True
 class Test_ButtonPage:
     baseURL = ReadConfig.getApplicationURL()
-   
+
     #Testing first row buttons
     def test_first_row_buttons(self):
 
@@ -48,10 +50,12 @@ class Test_ButtonPage:
         assert button_third_row.third_row_button_dropdown_enabled()
         button_third_row.third_row_button_dropdown_one()
         assert button_third_row.third_row_button_dropdown_one_enabled()
+        time.sleep(2)
         button_third_row.third_row_button_dropdown()
         assert button_third_row.third_row_button_dropdown_enabled()
+        time.sleep(2)
         button_third_row.third_row_button_dropdown_two()
-        assert button_third_row.third_row_button_dropdown_enabled()
+        assert button_third_row.third_row_button_dropdown_two_enabled()
 
 
 

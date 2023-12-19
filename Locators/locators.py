@@ -40,6 +40,15 @@ class Locators:
     checkbox_two_id = "checkbox-2"
     checkbox_three_id = "checkbox-3"
 
+    #04 Date Picker locators
+
+    input_datepicker_id = "datepicker"
+    datepicker_today_xpath = '//td[@class = "today active day"]'
+    datepicker_other_date_xpath ='//td[@class="active day"]'
+
+
+
+
 
 
 

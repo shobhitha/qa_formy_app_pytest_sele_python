@@ -13,10 +13,10 @@ def setup(request):
     print("initiating chrome driver")
 
     driver = webdriver.Chrome()
-    WebDriverWait(driver, 10)
+    WebDriverWait(driver, 30)
     driver.maximize_window()
     request.cls.driver = driver
 
     yield driver
-    #driver.close()
-    #driver.quit()
+    driver.close()
+    driver.quit()

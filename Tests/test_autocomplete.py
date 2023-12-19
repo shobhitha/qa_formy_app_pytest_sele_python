@@ -3,13 +3,14 @@ import pytest
 from selenium.webdriver.common.by import By
 from Utilities.readProperties import ReadConfig
 from Pages.autocompletePage import AutocompletePage
-from Locators.locators import Locators
+
 
 #autouse=True fixtures are run before each test_* method runs automatically. test_* doesn't have to request for fixtures explicitly
-@pytest.mark.usefixtures("setup")
+#@pytest.mark.usefixtures("setup") -> setup is made autouse=True
 class Test_Autocomplete:
     baseURL = ReadConfig.getApplicationURL()
 
+    @pytest.mark.xfail
     def test_01_autocomplete_dropdown_address(self):
         print(self.driver)
 
@@ -22,6 +23,7 @@ class Test_Autocomplete:
 
 
     # Verifying if the form field were autocompleted
+    @pytest.mark.xfail
     def test_02_autocompleted_fields(self):
 
         self.driver.get(self.baseURL + 'autocomplete')

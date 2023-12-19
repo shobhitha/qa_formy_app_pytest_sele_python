@@ -1,6 +1,8 @@
 from Utilities.readProperties import ReadConfig
 from Pages.checkboxPage import CheckboxPage
 
+#autouse=True fixtures are run before each test_* method runs automatically. test_* doesn't have to request for fixtures explicitly
+#@pytest.mark.usefixtures("setup") -> setup is made autouse=True
 class Test_checkboxes():
     baseURL = ReadConfig.getApplicationURL()
 
