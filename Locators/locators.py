@@ -46,6 +46,12 @@ class Locators:
     datepicker_today_xpath = '//td[@class = "today active day"]'
     datepicker_other_date_xpath ='//td[@class="active day"]'
 
+    #05 Drag and Drop locators
+
+    drag_img_id = "image"
+    drop_box_id = "box"
+    dropped_text_xpath = '//div[@id="box"]/p'
+
 
 
 

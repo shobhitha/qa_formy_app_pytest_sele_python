@@ -1,8 +1,6 @@
 
 from Locators.locators import Locators
 from selenium.webdriver.common.by import By
-from selenium import webdriver
-
 
 class DatePickerPage:
 
