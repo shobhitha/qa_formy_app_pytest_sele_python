@@ -52,6 +52,30 @@ class Locators:
     drop_box_id = "box"
     dropped_text_xpath = '//div[@id="box"]/p'
 
+    #06 DropDown locators
+
+    button_dropdown_page_id = 'dropdownMenuButton'
+    a_dropdown_autocomplete_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Autocomplete')]"
+    a_dropdown_buttons_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Buttons')]"
+    a_dropdown_checkbox_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Checkbox')]"
+    a_dropdown_datepicker_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Datepicker')]"
+    a_dropdown_draganddrop_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Drag and Drop')]"
+
+    a_dropdown_dropdown_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Dropdown')]"
+    a_dropdown_enabledisableelements_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Enabled and disabled elements')]"
+    a_dropdown_fileupload_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'File Upload')]"
+    a_dropdown_filedownload_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'File Download')]"
+    a_dropdown_keymousepress_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Key and Mouse Press')]"
+
+    a_dropdown_modal_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Modal')]"
+    a_dropdown_pagesroll_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Page Scroll')]"
+    a_dropdown_radiobutton_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Radio Button')]"
+    a_dropdown_switchwindow_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Switch Window')]"
+    a_dropdown_completewebform_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Complete Web Form')]"
+
+
+
+
 
 
 

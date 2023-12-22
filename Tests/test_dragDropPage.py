@@ -1,17 +1,19 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
-
 from Pages.dragDropPage import DragDropPage
 import time
-
-
+import pytest
 from Utilities.readProperties import ReadConfig
 class Test_dragDropPage:
     baseURL = ReadConfig.getApplicationURL()
 
-    def test_dragDropImg(self):
-
+    @pytest.fixture(scope='class', autouse=True)
+    def getURL(self):
         self.driver.get(self.baseURL + 'dragdrop')
+
+    def test_01_dragDropImg(self):
+
+        #self.driver.get(self.baseURL + 'dragdrop')
 
         dragDropObj = DragDropPage(self.driver)
         image = dragDropObj.drag_image()

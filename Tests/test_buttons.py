@@ -7,10 +7,14 @@ import time
 class Test_ButtonPage:
     baseURL = ReadConfig.getApplicationURL()
 
-    #Testing first row buttons
-    def test_first_row_buttons(self):
-
+    @pytest.fixture(scope='class', autouse=True)
+    def getURL(self):
         self.driver.get(self.baseURL + 'buttons')
+
+    #Testing first row buttons
+    def test_01_first_row_buttons(self):
+
+        #self.driver.get(self.baseURL + 'buttons')
         button_first_row = ButtonsPage(self.driver)
         button_first_row.first_row_button_primary()
         assert button_first_row.first_row_button_primary_enabled()
@@ -27,8 +31,8 @@ class Test_ButtonPage:
 
     #Testing second row buttons
 
-    def test_second_row_buttons(self):
-        self.driver.get(self.baseURL + 'buttons')
+    def test_02_second_row_buttons(self):
+        #self.driver.get(self.baseURL + 'buttons')
         button_second_row = ButtonsPage(self.driver)
         button_second_row.second_row_button_left()
         assert button_second_row.second_row_button_left_enabled()
@@ -38,8 +42,8 @@ class Test_ButtonPage:
         assert button_second_row.second_row_button_right_enabled()
 
 
-    def test_third_row_buttons(self):
-        self.driver.get(self.baseURL + 'buttons')
+    def test_03_third_row_buttons(self):
+        #self.driver.get(self.baseURL + 'buttons')
 
         button_third_row = ButtonsPage(self.driver)
         button_third_row.third_row_button_one()

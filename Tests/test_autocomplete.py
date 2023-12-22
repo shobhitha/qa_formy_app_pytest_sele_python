@@ -10,11 +10,14 @@ from Pages.autocompletePage import AutocompletePage
 class Test_Autocomplete:
     baseURL = ReadConfig.getApplicationURL()
 
+    @pytest.fixture(scope='class', autouse=True)
+    def getURL(self):
+        self.driver.get(self.baseURL + 'autocomplete')
     @pytest.mark.xfail
     def test_01_autocomplete_dropdown_address(self):
         print(self.driver)
 
-        self.driver.get(self.baseURL + 'autocomplete')
+        #self.driver.get(self.baseURL + 'autocomplete')
         autocomplete = AutocompletePage(self.driver)
         autocomplete.autocomplete_field(autocomplete.full_address_text)
         time.sleep(2)
@@ -26,7 +29,7 @@ class Test_Autocomplete:
     @pytest.mark.xfail
     def test_02_autocompleted_fields(self):
 
-        self.driver.get(self.baseURL + 'autocomplete')
+        #self.driver.get(self.baseURL + 'autocomplete')
         autocompleted_fields = AutocompletePage(self.driver)
 
         fields_list = [
