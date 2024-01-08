@@ -73,6 +73,14 @@ class Locators:
     a_dropdown_switchwindow_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Switch Window')]"
     a_dropdown_completewebform_xpath = "//div[@class='dropdown-menu show']//a[@class='dropdown-item'][contains(text(),'Complete Web Form')]"
 
+    #07 Enabled and Disabled elements
+
+    input_disabled_id = 'disabledInput'
+    input_enabled_id = 'input'
+
+
+
+
 
 
 

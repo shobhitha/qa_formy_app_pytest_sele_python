@@ -17,9 +17,9 @@ class Test_dropDownPage:
 
         dropDownButtonObj = dropDownPage(self.driver)
         dropDownButtonObj.dropdown_button_click()
-        time.sleep(1)
+        time.sleep(2)
         dropDownButtonObj.autocomplete_dropdown_button_click()
-        time.sleep(1)
+        time.sleep(2)
 
         assert self.driver.find_element(By.XPATH, "//h1[contains(text(), 'Autocomplete')]")
         self.driver.back()
@@ -30,9 +30,9 @@ class Test_dropDownPage:
 
         dropDownButtonObj = dropDownPage(self.driver)
         dropDownButtonObj.dropdown_button_click()
-        time.sleep(1)
+        time.sleep(2)
         dropDownButtonObj.buttons_dropdown_button_click()
-        time.sleep(1)
+        time.sleep(2)
 
         assert self.driver.find_element(By.XPATH, "//button[contains(text(), 'Primary')]")
         self.driver.back()
