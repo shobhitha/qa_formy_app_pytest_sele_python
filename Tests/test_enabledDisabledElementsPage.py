@@ -5,7 +5,7 @@ from Pages.enabledDisabledElementsPage import EnabledDisabledElements
 import time
 import pytest
 from Locators.locators import Locators
-from selenium import webdriver
+
 
 class Test_enabledDisabledElementsPage:
 

@@ -78,6 +78,46 @@ class Locators:
     input_disabled_id = 'disabledInput'
     input_enabled_id = 'input'
 
+    #08 File Upload
+    file_loc = '/Users/Raghu/qa_formy_app_pytest_sele_html/Locators/test_file.txt'
+    input_file_upload_field_id = 'file-upload-field'
+    button_upload_choose_xpath = "//button[contains(text(),'Choose')]"
+    button_upload_reset_xpath = "//button[contains(text(),'Reset')]"
+
+    #09 Keyboard and Mouse Input
+
+    input_fullName_id = 'name'
+    button_clickbutton_id = 'button'
+
+    #10 Modal Page locators
+
+    button_modal_id = 'modal-button'
+    div_modal_id = 'exampleModal'
+    close_button_id = 'close-button'
+
+    # 11) Scroll page locators
+    input_scroll_name_id = 'name'
+    input_scroll_date_id = 'date'
+
+    # 12) Radio buttons page locators
+    input_radio_one_xpath = "//input[@value='option1']"
+    input_radio_two_xpath = "//input[@value='option2']"
+    input_radio_three_xpath = "//input[@value='option3']"
+
+    # 13) Switch windows page locators
+    button_switchWindow_newTab_id = 'new-tab-button'
+    button_switchWindow_alert_id = 'alert-button'
+
+
+
+
+
+
+
+
+
+
+
 
 
 
