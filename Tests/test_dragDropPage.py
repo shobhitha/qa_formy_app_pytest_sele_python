@@ -11,6 +11,7 @@ class Test_dragDropPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'dragdrop')
 
+    #Test if drag and drop image action perfomed correctly
     def test_01_dragDropImg(self):
 
         #self.driver.get(self.baseURL + 'dragdrop')
@@ -20,10 +21,7 @@ class Test_dragDropPage:
         box = dragDropObj.drop_box()
 
         ActionChains(self.driver).drag_and_drop(image, box).perform()
-
         time.sleep(2)
-
-
         assert (self.driver.find_element(By.XPATH,'//div[@id="box"]/p').get_attribute("innerHTML")) == 'Dropped!'
 
 

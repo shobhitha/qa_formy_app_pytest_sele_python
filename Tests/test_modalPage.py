@@ -13,6 +13,7 @@ class Test_modalPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'modal')
 
+    #Test of the Modal window gets poped up on lcicking the button and close it
     def test_01_modal_title(self):
         modal_obj = ModalPage(self.driver)
         modal_obj.modal_button_click()

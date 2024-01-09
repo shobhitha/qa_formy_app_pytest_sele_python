@@ -11,7 +11,7 @@ class Test_pageScrollPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'switch-window')
 
-
+    #Test open new window button clcik opens the formy app in new window
     def test_01_open_new_tab(self):
 
         switchWindow_obj = SwitchWindowPage(self.driver)
@@ -22,6 +22,7 @@ class Test_pageScrollPage:
         assert self.driver.find_element(By.XPATH, "//h1[contains(text(), 'Welcome to Formy')]")
         self.driver.switch_to.window(self.driver.window_handles[0])
 
+    #Test open alert button to open an alert and close it
     def test_02_open_new_alert(self):
         switchWindow_obj = SwitchWindowPage(self.driver)
         switchWindow_obj.open_alert_buttn_click()

@@ -12,6 +12,7 @@ class Test_fileUploadPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'fileupload')
 
+    #Test the choose and reset butoons of file upload
     def test_01_file_upload_reset(self):
 
         file_upload_obj = FileUploadPage(self.driver)

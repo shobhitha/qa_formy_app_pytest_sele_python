@@ -10,6 +10,7 @@ class Test_pageScrollPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'radiobutton')
 
+    #Test if only radiobutton1 is selected
     def test_01_radio_button_one(self):
         radiobutton_obj = RadioButtonPage(self.driver)
         radiobutton_obj.radio_button_one_click()
@@ -18,6 +19,7 @@ class Test_pageScrollPage:
         assert not radiobutton_obj.radio_button_two_selected()
         assert not radiobutton_obj.radio_button_three_selected()
 
+    # Test if only radiobutton2 is selected
     def test_02_radio_button_one(self):
         radiobutton_obj = RadioButtonPage(self.driver)
         radiobutton_obj.radio_button_two_click()
@@ -26,6 +28,7 @@ class Test_pageScrollPage:
         assert radiobutton_obj.radio_button_two_selected()
         assert not radiobutton_obj.radio_button_three_selected()
 
+    # Test if only radiobutton3 is selected
     def test_03_radio_button_one(self):
         radiobutton_obj = RadioButtonPage(self.driver)
         radiobutton_obj.radio_button_three_click()

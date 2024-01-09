@@ -15,11 +15,13 @@ class Test_enabledDisabledElementsPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'enabled')
 
+    #Test if the disabled element is disabled
     def test_01_disabled_element(self):
 
         elements_obj = EnabledDisabledElements(self.driver)
         assert elements_obj.disabled_input() is False
 
+    #Test if the enabled element is enabled
     def test_02_enabled_element(self):
         elements_obj = EnabledDisabledElements(self.driver)
 

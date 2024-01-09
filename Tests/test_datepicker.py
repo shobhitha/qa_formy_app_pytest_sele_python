@@ -30,6 +30,7 @@ class Test_datepicker:
     def getURL(self):
         self.driver.get(self.baseURL + 'datepicker')
 
+    #Test if todays date is selected
     def test_01_select_todays_date(self):
         #self.driver.get(self.baseURL + 'datepicker')
         today_date_select = DatePickerPage(self.driver)
@@ -39,6 +40,7 @@ class Test_datepicker:
         selected_today_date = self.driver.find_element(By.ID, today_date_select.input_datepicker_id).get_attribute("value")
         assert selected_today_date == today_date()
 
+    #Test if a random date is selected
     def test_02_select_random_date(self):
         #self.driver.get(self.baseURL + 'datepicker')
         random_date_select = DatePickerPage(self.driver)

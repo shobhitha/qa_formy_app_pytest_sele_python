@@ -12,7 +12,6 @@ class DragDropPage:
 
     def drag_image(self):
         return WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.ID, self.drag_img_id)))
-        #self.driver.find_element(By.ID, self.drag_img_id)
 
     def drop_box(self):
         return WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((By.ID, self.drop_box_id)))

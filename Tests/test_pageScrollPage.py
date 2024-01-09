@@ -11,6 +11,7 @@ class Test_pageScrollPage:
     def getURL(self):
         self.driver.get(self.baseURL + 'scroll')
 
+    #Test the page scrolling functionality
     def test_01_pageScroll(self):
 
         pageScroll_obj = PageScroll(self.driver)

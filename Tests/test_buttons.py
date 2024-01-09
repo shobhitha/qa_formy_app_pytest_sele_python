@@ -41,7 +41,7 @@ class Test_ButtonPage:
         button_second_row.second_row_button_right()
         assert button_second_row.second_row_button_right_enabled()
 
-
+    # Testing third row buttons
     def test_03_third_row_buttons(self):
         #self.driver.get(self.baseURL + 'buttons')
 

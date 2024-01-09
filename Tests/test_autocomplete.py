@@ -25,7 +25,7 @@ class Test_Autocomplete:
         time.sleep(1)
 
 
-    # Verifying if the form field were autocompleted
+    # Verifying if the form fields were autocompleted
     @pytest.mark.xfail
     def test_02_autocompleted_fields(self):
 
