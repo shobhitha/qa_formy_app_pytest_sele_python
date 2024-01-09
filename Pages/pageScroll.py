@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 from Locators.locators import Locators
 
-
 class PageScroll:
     def __init__(self,driver):
 

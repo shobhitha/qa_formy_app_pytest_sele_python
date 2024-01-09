@@ -1,13 +1,8 @@
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-
 from Utilities.readProperties import ReadConfig
 from Pages.pageScroll import PageScroll
-import time
 import pytest
-from Locators.locators import Locators
 from Tests.test_datepicker import today_date
-
 
 class Test_pageScrollPage:
     baseURL = ReadConfig.getApplicationURL()
